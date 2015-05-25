@@ -25,18 +25,18 @@ import java.sql.Types;
  * @author kabram.
  *
  */
-public abstract class AbstractArrayType extends AbstractParameterizedMutableUserType {
+public abstract class PrimitiveAbstractArrayType extends AbstractParameterizedMutableUserType {
 
     public static final String DIALECT_PRIMITIVE_NAME = "arrayType";
     public static final String EMPTY_IS_NULL = "emptyIsNullHanding";
 
 
-    public AbstractArrayType() {
+    public PrimitiveAbstractArrayType() {
         super();
     }
 
 
-    public AbstractArrayType(String dialectPrimitiveName) {
+    public PrimitiveAbstractArrayType(String dialectPrimitiveName) {
         getParameters().setProperty(DIALECT_PRIMITIVE_NAME, dialectPrimitiveName);
     }
 

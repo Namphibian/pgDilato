@@ -36,7 +36,7 @@ import org.hibernate.engine.spi.SessionImplementor;
  * @author kabram.
  *
  */
-public class PrimitiveArraySetType extends AbstractArrayType {
+public class PrimitiveArraySetType extends PrimitiveAbstractArrayType {
 
     public PrimitiveArraySetType() {
         super();
